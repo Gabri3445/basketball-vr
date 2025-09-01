@@ -177,7 +177,7 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -635,7 +635,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c01c2f8c368a646998a5f9a0df70eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSound: {fileID: 8300000, guid: 5b1ef050ba10aee4c953faab9a48e631, type: 3}
+  ballSounds:
+  - {fileID: 8300000, guid: 5b1ef050ba10aee4c953faab9a48e631, type: 3}
+  - {fileID: 8300000, guid: 3c0311f5faea3194e974e3f07cdd13e0, type: 3}
+  - {fileID: 8300000, guid: aeb53fdef29d22844ae6f1ee422b6d05, type: 3}
 --- !u!43 &775285689
 Mesh:
   m_ObjectHideFlags: 0
