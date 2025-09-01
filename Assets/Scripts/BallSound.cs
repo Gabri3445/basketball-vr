@@ -17,6 +17,7 @@ public class BallSound : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if (!other.gameObject.CompareTag("Ground")) return;
         _audioSource.clip = ballSounds[Random.Range(0, ballSounds.Length)];
         _audioSource.volume = Mathf.Clamp01(other.relativeVelocity.magnitude / 20 * 2f);
         _audioSource.Play();
